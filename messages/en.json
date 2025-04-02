@@ -1,4 +1,18 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"greeting_message": "Hello World!"
+	"helloWorld": "Hello, {user}!",
+	"dogButtonAdd": "Add a Dog!",
+	"dogButtonRemove": "Remove a dog!",
+	"dogsAmount": "Dog amount {count}",
+	"dogs": [
+		{
+			"declarations": ["input count", "local countAmount = count: plural"],
+			"selectors": ["countAmount"],
+			"match": {
+				"countAmount=one": "You have a dog!",
+				"countAmount=other": "You have dogs!"
+			}
+		}
+	],
+	"dogsZero": "You do not have any dogs!"
 }

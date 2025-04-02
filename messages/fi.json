@@ -1,4 +1,18 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"greeting_message": "Heippa Maailma!"
+	"helloWorld": "Hei, {user}!",
+	"dogButtonAdd": "Lisää koira!",
+	"dogButtonRemove": "Poista koira!",
+	"dogsAmount": "Koirien määrä {count}",
+	"dogs": [
+		{
+			"declarations": ["input count", "local countAmount = count: plural"],
+			"selectors": ["countAmount"],
+			"match": {
+				"countAmount=one": "Teillä on koira!",
+				"countAmount=other": "Teillä on koiria!"
+			}
+		}
+	],
+	"dogsZero": "Teillä ei ole koiria!"
 }
